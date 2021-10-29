@@ -34,8 +34,6 @@ class AuthenticateUserService {
             headers: {
                 authorization: `Bearer ${accessTokenResponse.access_token}`
             }
-
-
         })
 
         return response.data
