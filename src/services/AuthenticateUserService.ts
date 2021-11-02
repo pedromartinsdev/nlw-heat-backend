@@ -26,7 +26,6 @@ class AuthenticateUserService {
             },
             headers: {
                 "Accept":"application/json"
-
             }
             
         })
