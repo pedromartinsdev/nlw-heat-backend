@@ -1,46 +1,15 @@
-import { useEffect, useState } from 'react'
+import { useContext} from 'react'
 import {VscGithubInverted} from 'react-icons/vsc'
-import { api } from '../../services/api'
+import { AuthContext } from '../../contexts/auth'
 import styles from './styles.module.scss'
 
-type AuthResponse = {
-    token: string;
-    user: {
-        id: string;
-        avatar_url: string;
-        name: string;
-        login: string  
-    }
-}
+
 
 export function LoginBox(){
-    const signInUrl = `https://github.com/login/oauth/authorize?scope=user&client_id=40fade9e63f927af8b77` 
-
-    async function signIn(githubCode: string){
-        const response = await api.post<AuthResponse>('authenticate', {
-            code: githubCode
-        })
-
-        const { token, user }= response.data
-
-        localStorage.setItem('@dowhile:token', token)
-
-        console.log(user)
-    }
+    const {signInUrl, user} = useContext(AuthContext)
     
-    useEffect(() => {
-        const url = window.location.href
-        const hasGithubCode = url.includes('?code=')
+    console.log(user)
     
-        if ( hasGithubCode){
-            const [urlWithoutCode, githubCode] = url.split('?code=')
-        
-            window.history.pushState({}, '', urlWithoutCode)
-        }   
-    
-    }, [])
-
-
     return(
         <div className={styles.loginBoxWrapper}>
             <strong> Entre e compartilhe sua mensagem</strong>
