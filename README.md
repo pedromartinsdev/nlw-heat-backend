@@ -1,4 +1,8 @@
-# Next Level Week - Heat
+<h2>Next Level Week - Heat</h2>
+
+<p align="center">
+<img src="/assets/logo_nlw.png"></img>
+</p>
 
 <h4>📚 Funcionalidades</h4>
 
