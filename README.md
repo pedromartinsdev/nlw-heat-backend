@@ -14,9 +14,10 @@
 <li>Vizualizar os três últimos comentários</li>
 </ul>
 
-<h4>🧰 Stack:</h4>
+<h4>🧰 Stack</h4>
 
 <li>Typescript</li>
+<li>Nodejs</li>
 <li>Prisma</li>
 <li>Insomnia</li>
 
