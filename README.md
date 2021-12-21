@@ -1,10 +1,10 @@
-<h2>Next Level Week - Heat</h2>
+<h1 align="center">Next Level Week - Heat</h1>
 
 <p align="center">
 <img src="/assets/logo_nlw.png"></img>
 </p>
 
-<h4>📚 Funcionalidades</h4>
+<h2>📚 Funcionalidades</h2>
 
 <p>Durante a NLW Heat desenvolvemos o backend de uma aplicação que permite ao usuário:</p>
 
@@ -14,16 +14,24 @@
 <li>Vizualizar os três últimos comentários</li>
 </ul>
 
-<h4>🧰 Stack</h4>
-
+<h2>🧰 Stack</h2>
+<ul>
 <li>Typescript</li>
 <li>Nodejs</li>
 <li>Prisma</li>
-<li>Insomnia</li>
+<li>Express</li>
+</ul>
+
+<h2>🚀 Como executar</h2>
+<ul>
+<li>Para testar a aplicação basta dar um <code>git clone</code></li>
+<li>Renomeie o arquivo <code>.env.examle</code> para <code>.env</code> e preencha com suas credenciais do GitHub </li>
+<li>Execute o comando <code>yarn</code> para instalar as dependências.</li>
+<li>Executa as migrations com <code>yarn prisma migrate dev</code></li>
+<li>Inicie a aplicação com <code>yarn dev</code></li>
+</ul>
 
 <br>
-
-<p> Para testar a aplicação basta dar um <code>git clone</code> nesse repositório e executar o comando <code>yarn</code> ou <code>npm</code> para instalar as dependências.
 
 <a href="https://github.com/pedromartinsdev/nlw-heat-web"> 💻 Frontend </a> dessa aplicação </p>
 
